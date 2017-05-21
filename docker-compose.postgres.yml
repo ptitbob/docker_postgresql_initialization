@@ -1,0 +1,10 @@
+version: '2'
+
+services:
+  postgresql:
+    build:
+      context: postgresql/.
+    image: shipstone/insee-data
+    container_name: insee-data
+    ports:
+      - 5432:5432
